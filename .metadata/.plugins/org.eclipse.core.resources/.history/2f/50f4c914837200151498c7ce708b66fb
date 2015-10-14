@@ -1,0 +1,9 @@
+package pool.ressource;
+
+public class RessourcePool implements Ressource {
+
+	public RessourcePool() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
