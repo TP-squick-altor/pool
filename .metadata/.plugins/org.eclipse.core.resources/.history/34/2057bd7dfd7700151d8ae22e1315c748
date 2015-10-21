@@ -1,0 +1,12 @@
+package pool.ressource.ressourcePool;
+
+public class BasketPool extends RessourcePool {
+
+	public BasketPool(int n) {
+		super(n);
+		}
+	public createRessource(){
+		return new Basket();
+	}
+
+}

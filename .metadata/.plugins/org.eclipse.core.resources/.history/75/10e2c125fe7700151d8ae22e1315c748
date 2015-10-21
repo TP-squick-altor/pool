@@ -1,0 +1,15 @@
+package pool.ressource.ressourcePool;
+
+import pool.ressource.Basket;
+import pool.ressource.Ressource;
+
+public class BasketPool extends RessourcePool<Basket> {
+
+	public BasketPool(int n) {
+		super(n);
+		}
+	public Basket createRessource(){
+		return new Basket();
+	}
+
+}

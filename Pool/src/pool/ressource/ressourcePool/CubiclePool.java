@@ -1,9 +1,14 @@
 package pool.ressource.ressourcePool;
 
-public class CubiclePool extends RessourcePool {
+import pool.ressource.Cubicle;
 
-	public CubiclePool() {
-		// TODO Auto-generated constructor stub
-	}
+public class CubiclePool extends RessourcePool<Cubicle> {
 
+	public CubiclePool(int n) {
+		super(n);
+		}
+	
+	public Cubicle createRessource(){
+		return new Cubicle();
+		}
 }

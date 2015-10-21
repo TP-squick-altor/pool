@@ -1,9 +1,14 @@
 package pool.ressource.ressourcePool;
 
-public class BasketPool extends RessourcePool {
+import pool.ressource.Basket;
 
-	public BasketPool() {
-		// TODO Auto-generated constructor stub
+public class BasketPool extends RessourcePool<Basket> {
+
+	public BasketPool(int n) {
+		super(n);
+		}
+	public Basket createRessource(){
+		return new Basket();
 	}
 
 }

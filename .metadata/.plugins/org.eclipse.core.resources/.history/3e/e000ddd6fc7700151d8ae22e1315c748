@@ -1,0 +1,29 @@
+package pool.ressource.ressourcePool;
+
+import java.util.ArrayList;
+
+import pool.ressource.Ressource;
+
+public abstract class RessourcePool <T extends Ressource> {
+
+	protected ArrayList<T> ressources;
+	protected ArrayList<T> usedRessources; 
+	
+	public RessourcePool(int nbRessource) {
+         ressources = new ArrayList<T>(nbRessource);
+         usedRessources= new ArrayList<T>();
+         for(int i=0 ;i<nbRessource;i++) {
+        	 ressources.add(createRessource());
+        	 
+         }
+	}
+	
+	public abstract T createRessource();
+
+	public T provideRessource(){
+		if (ressources.isEmpty()){
+			throw new RessourceIndisponible();
+		}
+		
+	}
+}
