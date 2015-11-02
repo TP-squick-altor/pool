@@ -1,22 +1,9 @@
 package pool.ressource;
 
-public class RessourceFulUser<R extends Ressource> {
+public class RessourceFulUser {
 
-	protected R ressource;
-	
 	public RessourceFulUser() {
-		this.ressource = null;
-	}
-	
-	public R getRessource() {
-		return ressource;
-	}
-	public void setResource(R resource){
-		this.ressource =resource;
-		return ;
-	}
-	public void resetResource() {
-		this.ressource=null;
+		// TODO Auto-generated constructor stub
 	}
 
 }

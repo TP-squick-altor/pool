@@ -1,9 +1,0 @@
-package pool.ressource;
-
-public class RessourcePool {
-
-	public RessourcePool() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
